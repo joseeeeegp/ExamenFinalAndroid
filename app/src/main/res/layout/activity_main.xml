@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnOpcionRegistro"
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:background="#12FFFFFF"
+        android:onClick="onClick"
+        android:text="Registrar Usuarios"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnConsultaIndividual"
+        android:layout_width="match_parent"
+        android:layout_height="98dp"
+        android:background="#12FFFFFF"
+        android:onClick="onClick"
+        android:text="Consultar Usuario"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnConsultaListaPersonasRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="98dp"
+        android:background="#12FFFFFF"
+        android:onClick="onClick"
+        android:text="Consultar Lista Usando Recycler"
+        android:textSize="18sp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="98dp"
+            android:layout_gravity="bottom|right"
+            android:background="#12FFFFFF"
+
+            android:clickable="true"
+            android:onClick="onClick"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/onemore" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>
